@@ -1,0 +1,96 @@
+int
+
+    public static void SearchMovies() {
+
+        System.out.println("Enter Search Critera:");
+        int Critera = in.nextInt();
+
+        for (int i = 0; i < myMovies.size(); i++) {
+
+            if (myMovies.get(i).MovieID == Critera)  {
+                System.out.println(myMovies.get(i).MovieID + "\t" +
+                                    myMovies.get(i).Title + "\t" +
+                                    myMovies.get(i).Release + "\t" +
+                                    myMovies.get(i).Duration + "\t" +
+                                    myMovies.get(i).Studio + "\t" +
+                                    myMovies.get(i).Director + "\t" +
+                                    myMovies.get(i).Rating);
+            }
+
+
+        }
+
+    }
+
+string
+
+    private static void SearchMovies() {
+
+        System.out.println("Enter Search Critera:");
+        String Critera = in.next();
+
+        for (int i = 0; i < myMovies.size(); i++) {
+
+            if (myMovies.get(i).MovieID.equals(Critera))  {
+                System.out.println(myMovies.get(i).MovieID + "\t" +
+                                    myMovies.get(i).Title + "\t" +
+                                    myMovies.get(i).Release + "\t" +
+                                    myMovies.get(i).Duration + "\t" +
+                                    myMovies.get(i).Studio + "\t" +
+                                    myMovies.get(i).Director + "\t" +
+                                    myMovies.get(i).Rating);
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private static void SearchTitle() {
+
+        System.out.println("Enter Search Movie ID:");
+        String Critera = in.nextInt();
+
+        for (int i = 0; i < myMovies.size(); i++) {
+
+            if (myMovies.get(i).Title.equals(Critera))  {
+                System.out.println(myMovies.get(i).MovieID + "\t" +
+                        myMovies.get(i).Title + "\t" +
+                        myMovies.get(i).Release + "\t" +
+                        myMovies.get(i).Duration + "\t" +
+                        myMovies.get(i).Studio + "\t" +
+                        myMovies.get(i).Director + "\t" +
+                        myMovies.get(i).Rating + "\n");
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
